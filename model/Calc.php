@@ -55,6 +55,8 @@ function calcPrimeNumbers($numJson) {
 
   $primenumbers->addAttribute('amount', $amountOfPrimeNumbers);
 
+  header('Content-type: application/xml');
+
   echo $xml->asXml();
 }
 
